@@ -11,24 +11,24 @@
 
 <body class="bg-success-subtle d-flex justify-content-center align-items-center ">
 
-    <div class="bg-white p-4 m-5 border rounded p-3 w-60 ">
+    <form class="bg-white p-4 m-5 border rounded p-3 w-60 ">
         <h1 class="mb-3">Contact us</h1>
         <div class="row">
             <div class="mb-3 col-sm-12 col-md-6">
                 <label for="exampleFormControlInput1" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
+                <input type="text" class="form-control" id="exampleFormControlInput1" required >
             </div>
 
             <div class="mb-3 col-sm-12 col-md-6">
                 <label for="exampleFormControlInput2" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="exampleFormControlInput2">
+                <input type="text" class="form-control" id="exampleFormControlInput2" required>
             </div>
         </div>
 
 
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1">
+            <input type="text" class="form-control" id="exampleFormControlInput1" required>
         </div>
         <div class="mb-3">
             <label for="querySelector" class="form-label">Query Selector</label>
@@ -53,20 +53,24 @@
 
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required ></textarea>
         </div>
 
         <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-            <label class="form-check-label" for="invalidCheck2">
+            <label class="form-check-label" for="invalidCheck2" required>
                 Agree to terms and conditions
             </label>
         </div>
+        <div class="col-md-4">
+            <label for="validationDefault01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+          </div>
 
         <div class="mt-5 ">
-            <button class="btn btn-primary w-100" type="submit">Submit form</button>
+            <button class="btn btn-success w-100" type="submit">Submit form</button>
         </div>
-    </div>
+    </form>
 
 </body>
 
